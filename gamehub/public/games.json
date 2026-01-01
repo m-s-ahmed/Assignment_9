@@ -1,0 +1,302 @@
+[
+  {
+    "id": "1",
+    "title": "PlayerUnknown's Battlegrounds: PUBG Mobile",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.webp",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale shooter where strategy, survival, and sharp aim decide the last team standing.",
+    "ratings": "4.5",
+    "developer": "KRAFTON"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.webp",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "A mobile FPS packed with iconic COD modes, multiplayer battles, and battle royale action with smooth controls.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Free Fire",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2j9k.webp",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com/",
+    "description": "Quick battle royale matches built for mobile where fast looting and smart movement bring the win.",
+    "ratings": "4.3",
+    "developer": "Garena"
+  },
+  {
+    "id": "4",
+    "title": "Valorant",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2eq3.webp",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "A tactical 5v5 shooter where precise gunplay meets unique agent abilities and team coordination.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "5",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6w0x.webp",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "The legendary tactical FPS returns with modern visuals, responsive movement, and intense competitive matches.",
+    "ratings": "4.6",
+    "developer": "Valve"
+  },
+  {
+    "id": "6",
+    "title": "Apex Legends",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wzo.webp",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "A squad-based battle royale with heroes, abilities, and high-speed gunfights in a futuristic arena.",
+    "ratings": "4.5",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "7",
+    "title": "Fortnite",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.webp",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.fortnite.com/",
+    "description": "Build, battle, and survive in a vibrant battle royale packed with events, skins, and creative modes.",
+    "ratings": "4.4",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "8",
+    "title": "Minecraft",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co49x5.webp",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "A sandbox universe where you mine, craft, and build anything—solo survival or with friends online.",
+    "ratings": "4.8",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "9",
+    "title": "GTA V (Grand Theft Auto V)",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tuu.webp",
+    "category": "Open World",
+    "downloadLink": "https://www.rockstargames.com/gta-v",
+    "description": "A massive open-world crime saga with cinematic missions, freedom to explore, and online multiplayer chaos.",
+    "ratings": "4.8",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "10",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2k1v.webp",
+    "category": "RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "An open-world action RPG with elemental combat, exploration, characters, and a story-driven fantasy world.",
+    "ratings": "4.4",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "11",
+    "title": "Honkai: Star Rail",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6m0w.webp",
+    "category": "RPG",
+    "downloadLink": "https://hsr.hoyoverse.com/",
+    "description": "A turn-based sci-fi RPG featuring stylish characters, strategic battles, and a journey across the stars.",
+    "ratings": "4.5",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "12",
+    "title": "League of Legends",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rgi.webp",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "description": "A competitive MOBA where champions, teamwork, and map control decide every intense match.",
+    "ratings": "4.6",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "13",
+    "title": "Dota 2",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x7j.webp",
+    "category": "MOBA",
+    "downloadLink": "https://www.dota2.com/",
+    "description": "A deep strategy MOBA with complex heroes, intense team fights, and an enormous esports ecosystem.",
+    "ratings": "4.4",
+    "developer": "Valve"
+  },
+  {
+    "id": "14",
+    "title": "Mobile Legends: Bang Bang",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1y07.webp",
+    "category": "MOBA",
+    "downloadLink": "https://m.mobilelegends.com/",
+    "description": "Fast 5v5 mobile MOBA matches with quick queues, hero variety, and smooth team-based action.",
+    "ratings": "4.2",
+    "developer": "Moonton"
+  },
+  {
+    "id": "15",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8o.webp",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "Build your village, train troops, and raid opponents in a classic strategy game with clan wars.",
+    "ratings": "4.6",
+    "developer": "Supercell"
+  },
+  {
+    "id": "16",
+    "title": "Clash Royale",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8p.webp",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashroyale/",
+    "description": "Real-time strategy battles with cards, decks, and quick matches where timing and tactics win.",
+    "ratings": "4.3",
+    "developer": "Supercell"
+  },
+  {
+    "id": "17",
+    "title": "Among Us",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2d4h.webp",
+    "category": "Party",
+    "downloadLink": "https://www.innersloth.com/games/among-us/",
+    "description": "A social deduction party game where crewmates do tasks and impostors try to sabotage and blend in.",
+    "ratings": "4.2",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "18",
+    "title": "Roblox",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rfs.webp",
+    "category": "Platform",
+    "downloadLink": "https://www.roblox.com/",
+    "description": "A massive platform of user-created games and experiences—play, create, and explore endlessly.",
+    "ratings": "4.4",
+    "developer": "Roblox Corporation"
+  },
+  {
+    "id": "19",
+    "title": "FIFA Mobile",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4b2l.webp",
+    "category": "Sports",
+    "downloadLink": "https://www.ea.com/games/fifa/fifa-mobile",
+    "description": "Build your ultimate team and compete in football matches with events, leagues, and updated squads.",
+    "ratings": "4.1",
+    "developer": "EA Sports"
+  },
+  {
+    "id": "20",
+    "title": "eFootball",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4t9s.webp",
+    "category": "Sports",
+    "downloadLink": "https://www.konami.com/efootball/",
+    "description": "A modern football experience featuring authentic clubs, online matches, and skill-based gameplay.",
+    "ratings": "4.0",
+    "developer": "Konami"
+  },
+  {
+    "id": "21",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z0p.webp",
+    "category": "Racing",
+    "downloadLink": "https://www.gameloft.com/game/asphalt-9",
+    "description": "High-speed arcade racing with stunning cars, nitro boosts, and cinematic tracks across the world.",
+    "ratings": "4.4",
+    "developer": "Gameloft"
+  },
+  {
+    "id": "22",
+    "title": "Need for Speed: No Limits",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wtb.webp",
+    "category": "Racing",
+    "downloadLink": "https://www.ea.com/games/need-for-speed/need-for-speed-no-limits",
+    "description": "Street racing action with customization, underground events, and fast-paced short races built for mobile.",
+    "ratings": "4.1",
+    "developer": "EA"
+  },
+  {
+    "id": "23",
+    "title": "Stardew Valley",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.webp",
+    "category": "Simulation",
+    "downloadLink": "https://www.stardewvalley.net/",
+    "description": "A relaxing farming and life simulator where you grow crops, build friendships, and explore mysteries.",
+    "ratings": "4.8",
+    "developer": "ConcernedApe"
+  },
+  {
+    "id": "24",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.webp",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "description": "A story-rich open-world RPG with deep quests, monster hunting, and unforgettable characters.",
+    "ratings": "4.9",
+    "developer": "CD PROJEKT RED"
+  },
+  {
+    "id": "25",
+    "title": "Elden Ring",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.webp",
+    "category": "Action RPG",
+    "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+    "description": "A challenging action RPG set in a vast world full of secrets, bosses, and rewarding exploration.",
+    "ratings": "4.9",
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "26",
+    "title": "Hades",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2m6v.webp",
+    "category": "Roguelike",
+    "downloadLink": "https://www.supergiantgames.com/games/hades/",
+    "description": "A stylish roguelike where you fight through the underworld with fast combat, upgrades, and story.",
+    "ratings": "4.8",
+    "developer": "Supergiant Games"
+  },
+  {
+    "id": "27",
+    "title": "Brawl Stars",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q8q.webp",
+    "category": "Action",
+    "downloadLink": "https://supercell.com/en/games/brawlstars/",
+    "description": "Quick, competitive brawler matches with unique characters, modes, and constant upgrades.",
+    "ratings": "4.4",
+    "developer": "Supercell"
+  },
+  {
+    "id": "28",
+    "title": "Subway Surfers",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2i5p.webp",
+    "category": "Arcade",
+    "downloadLink": "https://subwaysurfers.com/",
+    "description": "A classic endless runner where you dodge trains, collect coins, and chase high scores.",
+    "ratings": "4.5",
+    "developer": "SYBO Games"
+  },
+  {
+    "id": "29",
+    "title": "Temple Run 2",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2i5q.webp",
+    "category": "Arcade",
+    "downloadLink": "https://www.imangi.com/",
+    "description": "Run, jump, and slide through dangerous paths while escaping obstacles and chasing your best score.",
+    "ratings": "4.3",
+    "developer": "Imangi Studios"
+  },
+  {
+    "id": "30",
+    "title": "Candy Crush Saga",
+    "coverPhoto": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1x0a.webp",
+    "category": "Puzzle",
+    "downloadLink": "https://king.com/game/candycrush",
+    "description": "A colorful puzzle game with satisfying matches, boosters, and thousands of bite-sized levels.",
+    "ratings": "4.6",
+    "developer": "King"
+  }
+]
