@@ -1,12 +1,24 @@
 import React, { use, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
-import { Link, useNavigate } from "react-router";
+import { Link, Navigate, useNavigate } from "react-router";
 
 const Register = () => {
   const [nameError, setNameError] = useState("");
+  const [passError, setPassError] = useState("");
+  const { createUser, setUser, updateUser, googleSignIn, logout } =
+    use(AuthContext);
 
-  const { createUser, setUser, updateUser } = use(AuthContext);
   const navigate = useNavigate();
+
+  // Function for password validation
+  const validatePassword = (password) => {
+    if (password.length < 6) return "Password must be at least 6 characters.";
+    if (!/[A-Z]/.test(password))
+      return "Password must have an uppercase letter.";
+    if (!/[a-z]/.test(password))
+      return "Password must have a lowercase letter.";
+    return "";
+  };
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -25,6 +37,13 @@ const Register = () => {
     } else {
       setNameError("");
     }
+    //password validation
+    const passMsg = validatePassword(password);
+    if (passMsg) {
+      setPassError(passMsg);
+      return;
+    }
+    setPassError("");
 
     createUser(email, password)
       .then((result) => {
@@ -35,8 +54,14 @@ const Register = () => {
             //user jokhn ase tokhn tar name ba photo amader kase thake na. sejonno aivabe korte hobe
             //setUser(user);
             //upore je user ase tar shob gulo value niye naw and new kore set kore felo
+
             setUser({ ...user, displayName: name, photoURL: photo });
-            navigate("/");
+
+            // as create user using firebase logged in auto. so we can do logout
+            return logout().then(() => {
+              setUser(null);
+              navigate("/login", { state: { email } });
+            });
           })
           .catch((error) => {
             console.log(error);
@@ -49,6 +74,19 @@ const Register = () => {
       });
   };
 
+  const handleGoogleSignIn = () => {
+    console.log("Google Button Clicked");
+    googleSignIn()
+      .then((result) => {
+        console.log(result);
+        console.log(result.user);
+        navigate("/");
+        setUser(result.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="flex justify-center min-h-screen items-center">
       {" "}
@@ -99,13 +137,23 @@ const Register = () => {
               placeholder="Password"
               required
             />
+            {passError && <p className="text-xs text-error">{passError}</p>}
 
+            <div className="text-sm text-gray-400 mt-2 ">
+              <p>Password must be at least 6 characters.</p>
+              <p>Password must have an uppercase letter.</p>
+              <p>Password must have a lowercase letter.</p>
+            </div>
             <button type="submit" className="btn btn-neutral mt-4">
               Register
             </button>
             <div className="divider">OR</div>
 
-            <button type="button" className="btn btn-outline w-full">
+            <button
+              onClick={handleGoogleSignIn}
+              type="button"
+              className="btn btn-outline w-full"
+            >
               Continue with Google
             </button>
             <p className="font-semibold text-center pt-5">
