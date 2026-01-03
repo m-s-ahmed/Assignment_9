@@ -6,12 +6,14 @@ import Caurosel from "./Caurosel";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <div>
         {/* Banner Section */}
         <Caurosel></Caurosel>
       </div>
-
+      <div className="mt-5 mb-10 text-center">
+        <p className="text-4xl font-bold ">TOP THREE RATED GAMES</p>
+      </div>
       {/* Popular Games */}
       <HomePopularGames></HomePopularGames>
 

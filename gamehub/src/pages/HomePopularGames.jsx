@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
-
+import { IoStar } from "react-icons/io5";
+import { TbCategoryPlus } from "react-icons/tb";
 const HomePopularGames = () => {
   const [popularGames, setPopularGames] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -31,19 +32,29 @@ const HomePopularGames = () => {
 
   return (
     <div>
-      <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 ">
         {popularGames.map((game) => (
-          <div className="card card-side bg-base-100 shadow-sm">
-            <figure>
-              <img src={game.coverPhoto} alt={game.title} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">{game.title}</h2>
-              <div className="flex gap-2 text-sm">
-                <span className="badge badge-outline">{game.category}</span>
-                <span className="badge badge-outline">{game.ratings}</span>
+          <div className="card card-side bg-base-200 shadow-sm flex flex-col">
+            <div className="p-3">
+              <img
+                className="w-full h-full  rounded-sm"
+                src={game.coverPhoto}
+                alt={game.title}
+              />
+            </div>
+
+            <div className="card-body items-center">
+              <h2 className="card-title font-bold text-xl">{game.title}</h2>
+              <div className=" mt-2 flex gap-2 text-sm">
+                <span className="badge badge-outline badge-primary ">
+                  <TbCategoryPlus />
+                  {game.category}
+                </span>
+                <span className="badge badge-outline badge-primary ">
+                  <IoStar /> {game.ratings}
+                </span>
               </div>
-              <div className="card-actions justify-end">
+              <div className="card-actions mt-2">
                 <Link to={`/game-details/${game.id}`}>
                   <button className="btn btn-primary">View Details</button>
                 </Link>
@@ -52,8 +63,9 @@ const HomePopularGames = () => {
           </div>
         ))}
       </div>
+
       <div className="flex justify-center mt-8">
-        <Link to="/all-games" className="btn btn-primary">
+        <Link to="/all-games" className="btn btn-primary font-bold">
           All Games
         </Link>
       </div>

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { TbCategoryPlus } from "react-icons/tb";
+import { IoStar } from "react-icons/io5";
 
 const AllGames = () => {
   const [games, setGames] = useState([]);
@@ -34,7 +37,9 @@ const AllGames = () => {
     <div className="max-w-7xl mx-auto p-4 my-8">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold"> All Games ({games.length})</h2>
-        <Link to="/" className="btn btn-outline btn-sm">
+
+        <Link to="/" className="btn btn-outline btn-primary">
+          <IoMdArrowRoundBack />
           Back to Home
         </Link>
       </div>
@@ -49,24 +54,29 @@ const AllGames = () => {
               <img
                 src={game.coverPhoto}
                 alt={game.title}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </figure>
 
-            <div className="card-body">
-              <h3 className="card-title text-lg">{game.title}</h3>
+            <div className="card-body items-center">
+              <h3 className="card-title text-xl font-bold">{game.title}</h3>
 
               <div className="flex gap-2 text-sm">
-                <span className="badge badge-outline">{game.category}</span>
-                <span className="badge badge-outline">⭐ {game.ratings}</span>
+                <span className="badge badge-outline badge-primary ">
+                  <TbCategoryPlus />
+                  {game.category}
+                </span>
+                <span className="badge badge-outline badge-primary ">
+                  <IoStar /> {game.ratings}
+                </span>
               </div>
 
-              <div className="card-actions justify-end mt-2">
+              <div className="card-actions mt-2">
                 <Link
                   to={`/game-details/${game.id}`}
-                  state={{ from: location.pathname}}
+                  state={{ from: location.pathname }}
                 >
-                  <button className="btn btn-primary btn-sm">
+                  <button className="btn btn-primary btn-sm font-bold">
                     View Details
                   </button>
                 </Link>

@@ -7,7 +7,7 @@ const Caurosel = () => {
   return (
     <div>
       <section>
-        <div className=" carousel w-full ">
+        <div className=" carousel w-full border">
           <div id="slide1" className="carousel-item relative  w-full">
             <img src={gameimage1} className="w-full h-3/4" />
             <div className="absolute left-5 right-5 top-1/3 flex -translate-y-1/2 transform justify-between">
