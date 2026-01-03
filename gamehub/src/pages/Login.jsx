@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router";
+import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
   const [error, setError] = useState("");
@@ -78,7 +79,7 @@ const Login = () => {
 
             {error && <p className="text-red-400 text-xs">{error}</p>}
 
-            <button type="submit" className="btn btn-neutral mt-4">
+            <button type="submit" className="btn btn-primary mt-4 font-bold">
               Login
             </button>
             <div className="divider">OR</div>
@@ -86,12 +87,15 @@ const Login = () => {
             <button
               onClick={handleGoogleSignIn}
               type="button"
-              className="btn btn-outline w-full"
+              className="btn btn-outline w-full font-bold"
             >
-              Continue with Google
+              <FaGoogle size={20} color="blue" /> Continue with Google
             </button>
             <p className="font-semibold text-center pt-5">
-              Don't Have An Account? <Link to="/register">Register</Link>
+              Don't Have An Account?{" "}
+              <Link to="/register">
+                <span className="font-bold text-blue-800">Register</span>
+              </Link>
             </p>
           </fieldset>
         </form>

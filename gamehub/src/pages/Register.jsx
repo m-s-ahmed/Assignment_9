@@ -1,6 +1,7 @@
 import React, { use, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { Link, Navigate, useNavigate } from "react-router";
+import { FaGoogle } from "react-icons/fa";
 
 const Register = () => {
   const [nameError, setNameError] = useState("");
@@ -144,7 +145,7 @@ const Register = () => {
               <p>Password must have an uppercase letter.</p>
               <p>Password must have a lowercase letter.</p>
             </div>
-            <button type="submit" className="btn btn-neutral mt-4">
+            <button type="submit" className="btn btn-primary mt-4 font-bold">
               Register
             </button>
             <div className="divider">OR</div>
@@ -152,12 +153,16 @@ const Register = () => {
             <button
               onClick={handleGoogleSignIn}
               type="button"
-              className="btn btn-outline w-full"
+              className="btn btn-outline w-full font-bold"
             >
+              <FaGoogle size={20} color="blue" />
               Continue with Google
             </button>
             <p className="font-semibold text-center pt-5">
-              Already Have An Account? <Link to="/login">Login</Link>
+              Already Have An Account?{" "}
+              <Link to="/login">
+                <span className="text-blue-800 font-bold">Login</span>
+              </Link>
             </p>
           </fieldset>
         </form>
