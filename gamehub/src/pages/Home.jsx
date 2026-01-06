@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import HomePopularGames from "./HomePopularGames";
 import GameDetails from "./GameDetails";
 import Caurosel from "./Caurosel";
+import NewsLatter from "./NewsLatter";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <HomePopularGames></HomePopularGames>
 
       {/* Newsletter Section */}
+      <NewsLatter></NewsLatter>
     </div>
   );
 };
