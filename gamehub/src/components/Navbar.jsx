@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../providers/AuthProvider";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   // Je context ta baniyesilam setar use korlam
@@ -98,11 +99,17 @@ const Navbar = () => {
               )}
             </ul>
           </div>
-
-          <Link to="/" className="btn btn-ghost text-xl tracking-wide">
-            <span className="text-primary font-bold">GAME</span>
-            <span className="text-secondary font-bold">PLAY</span>
-          </Link>
+          {/* adding animation */}
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <Link to="/" className="btn btn-ghost text-xl tracking-wide">
+              <span className="text-primary font-bold">GAME</span>
+              <span className="text-secondary font-bold">PLAY</span>
+            </Link>
+          </motion.div>
         </div>
 
         {/* Center Side: Desktop Menu */}
@@ -128,17 +135,26 @@ const Navbar = () => {
                 className="btn btn-ghost btn-circle avatar"
                 title={user?.displayName || "My Profile"}
               >
-                <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img
-                    src={`${
-                      user
-                        ? user.photoURL
-                        : "https://i.ibb.co/ZYW3VTp/brown-brim.png"
-                    }`}
-                    alt="profile"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.25 }}
+                  onClick={() => navigate("/my-profile")}
+                  className="btn btn-ghost btn-circle avatar"
+                  title={user?.displayName || "My Profile"}
+                >
+                  <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <img
+                      src={`${
+                        user
+                          ? user.photoURL
+                          : "https://i.ibb.co/ZYW3VTp/brown-brim.png"
+                      }`}
+                      alt="profile"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                </motion.button>
               </button>
 
               <button onClick={handleLogout} className="btn btn-error btn-sm">

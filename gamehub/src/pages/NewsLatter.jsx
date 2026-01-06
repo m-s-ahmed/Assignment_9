@@ -26,7 +26,7 @@ const NewsLatter = () => {
     setEmail("");
   };
   return (
-    <section className="py-10 border ">
+    <section className="py-10">
       <div className="mx-auto max-w-6xl px-4">
         <div className="relative overflow-hidden rounded-3xl border border-base-300 bg-base-100 shadow-xl">
           {/* Decorative gradient blobs */}

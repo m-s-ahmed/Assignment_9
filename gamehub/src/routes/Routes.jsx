@@ -9,6 +9,7 @@ import GameDetails from "../pages/GameDetails";
 import AllGames from "../pages/AllGames";
 import ForgotPassword from "../pages/ForgotPassword";
 import UpdateProfile from "../pages/UpdateProfile";
+import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
             <UpdateProfile></UpdateProfile>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/*",
+        element: <NotFound></NotFound>,
       },
     ],
   },
