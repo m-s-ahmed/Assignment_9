@@ -3,6 +3,7 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -51,6 +52,20 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, provider);
   };
 
+  // for reset password
+  const resetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
+  // for update profile
+  const updateUserProfile = async (name, photoURL) => {
+  await updateProfile(auth.currentUser, {
+    displayName: name,
+    photoURL: photoURL,
+  });
+  setUser({ ...auth.currentUser });
+};
+
   //useEffect ar kaj holo React component render hoyar por side-effects handle kora
   useEffect(() => {
     // Set an authentication state observer and get user data
@@ -75,6 +90,8 @@ const AuthProvider = ({ children }) => {
     updateUser,
     createUser,
     googleSignIn,
+    resetPassword,
+    updateUserProfile,
   };
 
   return (

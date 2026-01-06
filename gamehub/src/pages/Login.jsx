@@ -5,6 +5,10 @@ import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
   const [error, setError] = useState("");
+
+  // For email tracking
+  const [emailValue, setEmailvalue] = useState("");
+
   const { signIn } = use(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -63,6 +67,8 @@ const Login = () => {
               className="input"
               placeholder="Email"
               required
+              value={emailValue}
+              onChange={(e) => setEmailvalue(e.target.value)}
             />
             {/* password */}
             <label className="label">Password</label>
@@ -74,7 +80,13 @@ const Login = () => {
               required
             />
             <div>
-              <a className="link link-hover">Forgot password?</a>
+              <Link
+                to="/forgot-password"
+                state={{ email: emailValue }}
+                className="link link-hover"
+              >
+                Forgot password?
+              </Link>
             </div>
 
             {error && <p className="text-red-400 text-xs">{error}</p>}

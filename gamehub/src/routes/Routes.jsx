@@ -7,6 +7,8 @@ import MyProfile from "../pages/MyProfile";
 import PrivateRoute from "../providers/PrivateRoute";
 import GameDetails from "../pages/GameDetails";
 import AllGames from "../pages/AllGames";
+import ForgotPassword from "../pages/ForgotPassword";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -47,8 +49,18 @@ const router = createBrowserRouter([
       },
 
       {
-        
-      }
+        path: "/forgot-password",
+        element: <ForgotPassword></ForgotPassword>,
+      },
+
+      {
+        path: "update-profile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile></UpdateProfile>
+          </PrivateRoute>
+        ),
+      },
     ],
   },
 ]);
